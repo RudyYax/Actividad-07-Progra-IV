@@ -66,11 +66,10 @@ while opcion != 4:
                 print(f"Edad: {TotalEstudiantes['Edad']}")
                 print(f"Carrera: {TotalEstudiantes['Carrera']}")
                 for carnet, CodigoCurso, Cursos in estudiantes.items():
-                    print(f"Codigo del curos: {Cursos['CursosTotales'] ['CodigoCurso']}")
-                    print(f"Nombre del curso: {Cursos['CursosTotales'] ['NombreCurso']}")
-                    print(f"Nota del parcial {Cursos['CursosTotales'] ['NotaParcial']}")
-                    print(f"Nota del proyecto {Cursos['CursosTotales'] ['NotaProyecto']}")
-                    print(f"Nota de las Tareras {Cursos ['CursosTotales'] ['NotaTarea']}")
+                    print(f"Nombre del curso: {Cursos['CodigoCurso'] ['NombreCurso']}")
+                    print(f"Nota del parcial {Cursos['CodigoCurso'] ['NotaParcial']}")
+                    print(f"Nota del proyecto {Cursos['CodigoCurso'] ['NotaProyecto']}")
+                    print(f"Nota de las Tareras {Cursos ['CodigoCurso'] ['NotaTarea']}")
 
 
 
