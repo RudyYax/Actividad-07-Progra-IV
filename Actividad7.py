@@ -48,8 +48,8 @@ while opcion != 4:
                 "Nombre": Nombre,
                 "Edad": Edad,
                 "Carrera": Carrera,
-                "CursosTotales" : {
-                    "CodigoCurso": CodigoCurso,
+
+                    "CodigoCurso": {
                     "NombreCurso": NombreCurso,
                     "NotaParcial": NotaParcial,
                     "NotaProyecto": NotaProyecto,
@@ -65,7 +65,7 @@ while opcion != 4:
                 print(f"Nombre : {TotalEstudiantes['Nombre']}")
                 print(f"Edad: {TotalEstudiantes['Edad']}")
                 print(f"Carrera: {TotalEstudiantes['Carrera']}")
-                for CodigoCurso, Cursos in estudiantes.items():
+                for carnet, CodigoCurso, Cursos in estudiantes.items():
                     print(f"Codigo del curos: {Cursos['CursosTotales'] ['CodigoCurso']}")
                     print(f"Nombre del curso: {Cursos['CursosTotales'] ['NombreCurso']}")
                     print(f"Nota del parcial {Cursos['CursosTotales'] ['NotaParcial']}")
