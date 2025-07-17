@@ -70,7 +70,7 @@ while opcion != 4:
                     print(f"Nombre del curso: {Cursos['CursosTotales'] ['NombreCurso']}")
                     print(f"Nota del parcial {Cursos['CursosTotales'] ['NotaParcial']}")
                     print(f"Nota del proyecto {Cursos['CursosTotales'] ['NotaProyecto']}")
-                    print(f"Nota de las Tareras {Curos ['CursosTotales'] ['NotaTarea']}")
+                    print(f"Nota de las Tareras {Cursos ['CursosTotales'] ['NotaTarea']}")
 
 
 
