@@ -23,23 +23,23 @@ while opcion != 4:
                     Nombre = input("Ingrese el nombre completo del estudiante: ")
                     Edad = input("Ingrese la edad del estudiante: ")
                     Carrera = input("Ingrese la carrera del estudiante: ")
-                    CantidadCuros = input("Ingrese la cantidad de curos que deseea inscribir: ")
-                    for i in range(CantidadCuros):
-                        print(f"\n Curso {i + 1}")
-                        CodigoCurso = input("Ingrese el codigo del curso")
+                    CantidadCuros = int(input("Ingrese la cantidad de curos que deseea inscribir: "))
+                    for v in range(CantidadCuros):
+                        print(f"\n Curso {v + 1}")
+                        CodigoCurso = int(input("Ingrese el codigo del curso"))
                         if CodigoCurso in estudiantes:
-                            print("El carnet ya esta ingresado no puede repetir un ingreso")
+                            print("El codigo del curso ya esta ingresado no puede repetir un ingreso")
                         else:
                             NombreCurso = input("Ingrese el nombre del curso que deseea inscribir: ")
-                            NotaTarea = input("Ingrese la nota de Tareas")
+                            NotaTarea = int(input("Ingrese la nota de Tareas"))
                             if NotaTarea < 0:
                                 print("La nota no puede ser negativa")
                             else:
-                                NotaParcial = input("Ingrese la nota de los parciales")
+                                NotaParcial = int(input("Ingrese la nota de los parciales"))
                                 if NotaParcial < 0:
                                     print("La nota no puede ser negativa")
                                 else:
-                                    NotaProyecto = input("Ingrese la nota de la proyecto")
+                                    NotaProyecto = int(input("Ingrese la nota de la proyecto"))
                                     if NotaProyecto < 0:
                                         print("La nota no puede ser negativa")
                                     else:
@@ -49,13 +49,17 @@ while opcion != 4:
                 "Edad": Edad,
                 "Carrera": Carrera,
                 "CursosTotales" : {
+                    "CodigoCurso": CodigoCurso,
                     "NombreCurso": NombreCurso,
                     "NotaParcial": NotaParcial,
+                    "NotaProyecto": NotaProyecto,
+                    "NotaTarea": NotaTarea,
 
                 }
-
             }
-
+        case 2:
+            print("Mostrar los estudiantes")
+            print("Total estudiantes ")
 
 
 
